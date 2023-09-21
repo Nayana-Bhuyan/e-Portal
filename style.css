@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(to right, orange, white, green) !important;
+}
+
+/* right,white , white , lightblue , lightblue , rgb(72, 72, 255) */
+
+.navbar-brand {
+    color: darkblue !important;
+}
+
+.nav-link {
+    color: darkblue !important;
+}
+
+.nav-link:hover {
+    color: blue !important;
+}
+
+@media(max-width: 1200px) {
+    .nav-link {
+        text-align: center;
+    }
+}
+
+.h3 {
+    height: 60vh;
+}
+
+.carousel-caption {
+    height: 70vh;
+    font-size: larger;
+}
+
+.navbar img {
+    height: 18vh;
+    margin-left: 1vw;
+}
+
+@media(max-width: 1200px) {
+    .navbar img {
+        margin-left: 11vw;
+    }
+}
+
+.nav-item .btn-group {
+    margin-left: 6vw;
+}
