@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+p{
+    font-size: 1.3rem;
+    
+}
+.about-container .heading{
+    font-size: 3rem;
+    color: white;
+}
+#sec-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; 
+    margin:2vh 4vw;
+    padding:2vh;
+    height: 72vh;
+    background-color: rgb(243, 252, 249);
+}
+#sec-1 h2{
+    font-size: 1.6rem;
+}
+#sec-1 p{
+    margin: 5vh;
+}
+.bgimage{
+   display:flex;
+   justify-content: center;
+   align-items: center;  
+   text-align: justify; 
+   border: 2px solid black;
+   margin: 0;
+   height: 20vh;
+}
+.bgimage::before{
+    content: "";
+    position: absolute;
+    background: url(court-2.jpg) no-repeat center center/cover;
+    filter: blur(2.5px);
+    width:100%;
+    z-index:-1;  
+    height: 20vh;
+}
+
+#sec-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2vh 4vw;
+    /* transform: 1s translateX(100%); */
+    padding: 1vh;
+    height: 100vh;
+    background-color: rgb(243, 252, 249);
+}
+#sec-2 h1{
+    font-size: 2rem;
+}
+#sec-2 p{
+    margin: 5vh;
+}
+#sec-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 2vh 4vw;
+    padding: 1vh;
+    height: 100vh;
+    background-color: rgb(243, 252, 249);
+}
+#sec-3 h1{
+    font-size: 2rem;
+}
+.pera{
+    margin: 5vh;
+}
+#sec-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 0 4vw;
+    transform: 1s;
+    padding: 1vh;
+    height: 100vh;
+    background-color: rgb(243, 252, 249);
+}
+#sec-4 h1{
+    font-size: 2rem;
+}
+@media screen and (max-width: 400px){
+    
+    .about-container .heading{
+        font-size: 1.5rem;
+    }
+    #sec-1 h2{
+        font-size: 1.2rem;
+    }
+    #sec-2{
+        height: 70vh;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    #sec-3{
+        height: 130vh;
+    }
+    #sec-3 h1{
+        font-size: 1.5rem;
+    }
+    #sec-4{
+        height: 130vh;
+    }
+    #sec-4 h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 718px) and (min-width:400px){
+    #sec-1 h2{
+        font-size: 1.3rem;
+    }
+    #sec-2{
+        height: 60vh;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .pera{
+        margin: 3.5vh;
+    }
+    #sec-4{
+        height: 90vh;
+    }
+}
