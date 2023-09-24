@@ -1,0 +1,95 @@
+footer{
+    background-color: rgb(13, 13, 13);
+    color: white;
+    height: 36vh;
+}
+.sec1{
+    display: flex;
+
+}
+.footer{
+    margin-left: 10px;
+    padding-top: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+.footer img{
+    height: 126px;
+    width: 188px;
+}
+.links{
+    padding: 34px;
+    padding-left: 152px;
+    margin-right: 20px;
+    width: 22vw;
+}
+.links ul{
+    list-style: none;
+}
+.links ul li{
+    padding: 5px;
+
+   
+}
+.links ul li:hover{
+    font-size: 17px;
+    cursor: pointer;
+  
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 220px;
+}
+.follow a{
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 22px;
+    width: fit-content;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: fit-content;
+}
+.follow a:hover{
+    cursor: pointer;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    padding-left: 223px;
+    padding-top: 70px;
+}
+footer hr{
+    border: 0;
+    background-color:white;
+    height: 4px;
+    margin: 0px 29px;
+}
+.sec2{
+    display: flex;
+    margin-top: 5px;
+    background-color: rgb(12, 11, 11);
+}
+.sec2 p{
+    padding-left: 15px;
+}
+.sec2 ul{
+    display: flex;
+    list-style: none;
+    padding-left: 757px;
+    
+}
+.sec2 ul a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
