@@ -15,14 +15,24 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.scss">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="notification_login.html">
+    <link rel="stylesheet" href="notification.html">
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="footer.html">
+    <link rel="stylesheet" href="footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="about.js"> -->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <img src="https://www.firstindia.co.in/public/news/August2023/1693044634Photo%20by%20%20-%202023-08-26T154021.524.png" alt="...">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="index.html">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Notification</a>
+                        <a class="nav-link" href="notification_login.html">Notification</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Hearing</a>
@@ -46,8 +56,8 @@
                     </li>
                     <li class="nav-item">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary">Sign Up</button>
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <a href="signup.html"><button type="button" class="btn btn-primary">Sign Up</button></a>
+                            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
                           </div>
                     </li>
 
@@ -122,5 +132,56 @@
                     duration:1000,
                 });
               </script>
+     <footer>
+        <section class="sec1">
+            <div class="footer"><img
+                    src="https://www.firstindia.co.in/public/news/August2023/1693044634Photo%20by%20%20-%202023-08-26T154021.524.png"
+                    alt="...">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Home
+                        <link href="#">
+                    </li>
+                    <li>About us
+                        <link href="#">
+                    </li>
+                    <li>Features
+                        <link href="#">
+                    </li>
+                    <li>Log out
+                        <link href="#">
+                    </li>
+                </ul>
+            </div>
+            <div class="follow">
+                <span>FOLLOW US</span>
+                <div class="logos"> <a href="#"><i class="fa-2x fa-brands fa-facebook" style="color: #0955d7;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #0e8cec;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-square-instagram" style="color: #d408c3;"></i></a>
+                </div>
+            </div>
+            <div class="contact">
+                <span>CONTACT US</span>
+                <span>e-mail</span>
+                <span>0000000000</span>
+            </div>
+        </section>
+        <hr>
+        <section class="sec2">
+            <p>©[2023][e-portal].All rights reserved</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
 </body>
 </html>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="DemoChatBot" agent-id="fad5cf27-c793-4297-9bea-b8b3b792d9ff"
+    language-code="en"></df-messenger>

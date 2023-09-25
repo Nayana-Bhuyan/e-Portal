@@ -9,12 +9,23 @@
     <link rel="stylesheet" href="style.scss">
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="notification.html">
     <link rel="stylesheet" href="notification_login.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="footer.html">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="signup.html">
     <link rel="stylesheet" href="login.html">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -33,7 +44,7 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Notification</a>
@@ -49,8 +60,8 @@
                     </li>
                     <li class="nav-item">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary">Sign Up</button>
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <a href="signup.html"><button type="button" class="btn btn-primary">Sign Up</button></a>
+                            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
                         </div>
                     </li>
 
@@ -82,7 +93,7 @@
     </nav>
 
     <div class="notificationcontainer">
-        <p>
+        <p class="text-center" class="lh-base" id="welcometext">
             Welcome to the Case Management Hearing Notification page of our e-Portal. Our platform is designed to
             streamline the process of scheduling and managing case management hearings, ensuring smooth pre-trial
             conferences across various types of cases. This page keeps you informed about upcoming hearings and provides
@@ -90,18 +101,63 @@
         </p>
 
         <section>
-            <span>Please login to access your personalized case management hearing notifications. Upon logging in, you
-                will find a summary of your upcoming case management hearings</span><br>
-            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
+            <p class="text-center" id="notificationlogin">Please login to access your personalized case management hearing notifications. Upon logging in, you will find a summary of your upcoming case management hearings<p><br>
+            <p class="text-center" id="notlog"><a href="loginsample.html"><button type="button" class="btn btn-primary"
+                    id="notificationloginbtn">Login</button></a></p>
         </section>
     </div>
+
+
+    <footer>
+        <section class="sec1">
+            <div class="footer"><img
+                    src="https://www.firstindia.co.in/public/news/August2023/1693044634Photo%20by%20%20-%202023-08-26T154021.524.png"
+                    alt="...">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Home
+                        <link href="#">
+                    </li>
+                    <li>About us
+                        <link href="#">
+                    </li>
+                    <li>Features
+                        <link href="#">
+                    </li>
+                    <li>Log out
+                        <link href="#">
+                    </li>
+                </ul>
+            </div>
+            <div class="follow">
+                <span>FOLLOW US</span>
+                <div class="logos"> <a href="#"><i class="fa-2x fa-brands fa-facebook" style="color: #0955d7;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #0e8cec;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-square-instagram" style="color: #d408c3;"></i></a>
+                </div>
+            </div>
+            <div class="contact">
+                <span>CONTACT US</span>
+                <span>e-mail</span>
+                <span>0000000000</span>
+            </div>
+        </section>
+        <hr>
+        <section class="sec2">
+            <p>©[2023][e-portal].All rights reserved</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
 </body>
 
 </html>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="DemoChatBot"
-  agent-id="fad5cf27-c793-4297-9bea-b8b3b792d9ff"
-  language-code="en"
-></df-messenger>
+<df-messenger intent="WELCOME" chat-title="DemoChatBot" agent-id="fad5cf27-c793-4297-9bea-b8b3b792d9ff"
+    language-code="en"></df-messenger>

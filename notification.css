@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.notificationcontainer p {
+    margin: 30vh 9vw 1vh 9vw;
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+}
+
+#casedetails{
+    font-size: 1.6rem;
+    margin-bottom: 2vh;
+}
+
+#caseinfo{
+    font-size: 1.6rem;
+    margin-bottom: 2vh;
+}
+
+#notificationpref{
+    font-size: 1.6rem;
+    margin-bottom: 2vh;
+}
+
+.notificationcontainer ul{
+    margin: 1vh 9vw 1vh 9vw;
+    font-size: 1.3rem;
+}
+
+ul {
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+.form-check {
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+    margin: 0 9vw 0 9vw;
+    font-size: 1.3rem;
+} 
+
+#notificationfrequency{
+    font-size: 1.6rem;
+}
+
+#security{
+    margin-top: 0;
+}

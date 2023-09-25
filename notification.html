@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="footer.html">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="signup.html">
+    <link rel="stylesheet" href="login.html">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
@@ -32,7 +41,7 @@
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="notification.html">Notification</a>
@@ -48,8 +57,8 @@
                     </li>
                     <li class="nav-item">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-primary">Sign Up</button>
-                            <button type="button" class="btn btn-primary">Login</button>
+                            <a href="signup.html"><button type="button" class="btn btn-primary">Sign Up</button></a>
+                            <a href="login.html"><button type="button" class="btn btn-primary">Login</button></a>
                         </div>
                     </li>
 
@@ -79,16 +88,18 @@
             </div>
         </div>
     </nav>
-    
-    <p>
-        Welcome to the Case Management Hearing Notification page of our e-Portal. Our platform is designed to
-        streamline the process of scheduling and managing case management hearings, ensuring smooth pre-trial
-        conferences across various types of cases. This page keeps you informed about upcoming hearings and provides
-        essential details to help you prepare effectively.
-    </p><br>
 
 
-    <span>Here are your case hearing details :</span>
+    <div class="notificationcontainer">
+        <p class="text-center" class="lh-base">
+            Welcome to the Case Management Hearing Notification page of our e-Portal. Our platform is designed to
+            streamline the process of scheduling and managing case management hearings, ensuring smooth pre-trial
+            conferences across various types of cases. This page keeps you informed about upcoming hearings and provides
+            essential details to help you prepare effectively.
+        </p><br>
+
+
+        <p class="text-center" id="casedetails">Here are your case hearing details :</p>
         <ul>
             <li>Case Title: [Case Title]</li>
             <li>Case Number: [Case Number]</li>
@@ -103,7 +114,7 @@
         </ul><br>
 
 
-    <span>Here is your detailed information about the case management hearing :</span>
+        <p class="text-center" id="caseinfo">Here is your detailed information about the case management hearing :</p>
         <ul>
             <li>Case Summary: A brief overview of the case.</li>
             <li>Hearing Purpose: The objectives of the case management hearing.</li>
@@ -113,57 +124,103 @@
             <li>Important Dates: Key dates related to the case, including trial dates and deadlines.</li>
             <li>Action Items: Pending actions or tasks associated with the case.</li>
         </ul><br>
-    
 
 
-    <span>Choose your notification preferences to receive updates according to your preferences :</span>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            Email Notifications: Receive email alerts for upcoming hearings, case updates, and document uploads
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            SMS Notifications: Get text message notifications for essential case developments
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            Push Notifications: Receive instant updates through our mobile app
-        </label>
-    </div><br>
-    <span>Choose the frequency of notifications :</span>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            Daily
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            Weekly
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-            Monthly
-        </label>
-    </div><br>
 
-    <span>Ensure the security of your information by logging out of your account when you're finished</span><br>
-    <button type="button" class="btn btn-primary">Log Out</button>
-    <br>
+        <p class="text-center" id="notificationpref">Choose your notification preferences to receive updates according to your preferences</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Email Notifications: Receive email alerts for upcoming hearings, case updates, and document uploads
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                SMS Notifications: Get text message notifications for essential case developments
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Push Notifications: Receive instant updates through our mobile app
+            </label>
+        </div><br>
+        <p class="text-center" id="notificationfrequency">Choose the frequency of notifications :</p>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Daily
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Weekly
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Monthly
+            </label>
+        </div><br>
+
+        <p class="text-center">Ensure the security of your information by logging out of your account when you're finished</p><br>
+        <p class="text-center" id="security"><button type="button" class="btn btn-primary">Log Out</button></p>
+        <br>
+    </div>
+
+    <footer>
+        <section class="sec1">
+            <div class="footer"><img
+                    src="https://www.firstindia.co.in/public/news/August2023/1693044634Photo%20by%20%20-%202023-08-26T154021.524.png"
+                    alt="...">
+            </div>
+            <div class="links">
+                <ul>
+                    <li>Home
+                        <link href="#">
+                    </li>
+                    <li>About us
+                        <link href="#">
+                    </li>
+                    <li>Features
+                        <link href="#">
+                    </li>
+                    <li>Log out
+                        <link href="#">
+                    </li>
+                </ul>
+            </div>
+            <div class="follow">
+                <span>FOLLOW US</span>
+                <div class="logos"> <a href="#"><i class="fa-2x fa-brands fa-facebook" style="color: #0955d7;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-twitter" style="color: #0e8cec;"></i></a>
+                    <a href="#"><i class="fa-2x fa-brands fa-square-instagram" style="color: #d408c3;"></i></a>
+                </div>
+            </div>
+            <div class="contact">
+                <span>CONTACT US</span>
+                <span>e-mail</span>
+                <span>0000000000</span>
+            </div>
+        </section>
+        <hr>
+        <section class="sec2">
+            <p>©[2023][e-portal].All rights reserved</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Disclaimer</a></li>
+            </ul>
+        </section>
+
+    </footer>
+
 </body>
+
 </html>
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="DemoChatBot"
-  agent-id="fad5cf27-c793-4297-9bea-b8b3b792d9ff"
-  language-code="en"
-></df-messenger>
+<df-messenger intent="WELCOME" chat-title="DemoChatBot" agent-id="fad5cf27-c793-4297-9bea-b8b3b792d9ff"
+    language-code="en"></df-messenger>

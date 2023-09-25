@@ -1,8 +1,41 @@
 
-section h1{
-    padding: 2vh 50vw 2vh 45vw;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.logincontainer{
-    padding: 2vh 50vw 2vh 45vw;
+/* body{
+    font-family: 'Montserrat','Courier New', Courier, monospace;
+    ;
+} */
+
+/* .notificationcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; 
+    margin:2vh 4vw;
+    padding:2vh;
+    height: 72vh;
+}
+
+#notificationloginbtn{
+    margin: 1vh 50vw 2vh 50vw;
+} */
+
+#welcometext{
+    font-family: 'Montserrat','Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    margin: 30vh 9vw 30vh 9vw;
+}
+
+#notificationlogin{
+    font-family: 'Montserrat','Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+#notlog{
+    margin-top: 0;
 }

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat','Courier New', Courier, monospace;
+}
+
 .navbar {
     width: 100%;
     background-image: linear-gradient(to right, orange, white, green) !important;
